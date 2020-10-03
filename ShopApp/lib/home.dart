@@ -1,10 +1,6 @@
 import 'package:ShopApp/HomePage.dart';
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(ShopV());
-}
-
 class ShopV extends StatefulWidget {
   @override
   _ShopVState createState() => _ShopVState();
@@ -19,7 +15,50 @@ class _ShopVState extends State<ShopV> {
         title: 'Shop Airbub',
         home: Scaffold(
           body: Column(
-            children: [HomeScreenTopPage()],
+            children: [
+              HomeScreenTopPage(),
+              Expanded(
+                child: ListView(
+                  children: [
+                    Text("kjhgkhgk"),
+                    Text("kjhgkhgk"),
+                    Text("kjhgkhgk"),
+                    Text("kjhgkhgk"),
+                    Text("kjhgkhgk"),
+                    Text("kjhgkhgk"),
+                    Text("kjhgkhgk"),
+                    Text("kjhgkhgk"),
+                    Text("kjhgkhgk"),
+                    Text("kjhgkhgk"),
+                    Text("kjhgkhgk"),
+                    Text("kjhgkhgk"),
+                    Text("kjhgkhgk"),
+                    Text("kjhgkhgk"),
+                    Text("kjhgkhgk"),
+                    Text("kjhgkhgk"),
+                    Text("kjhgkhgk"),
+                    Text("kjhgkhgk"),
+                    Text("kjhgkhgk"),
+                    Text("kjhgkhgk"),
+                    Text("kjhgkhgk"),
+                    Text("kjhgkhgk"),
+                    Text("kjhgkhgk"),
+                    Text("kjhgkhgk"),
+                    Text("kjhgkhgk"),
+                    Text("kjhgkhgk"),
+                    Text("kjhgkhgk"),
+                    Text("kjhgkhgk"),
+                    Text("kjhgkhgk"),
+                    Text("kjhgkhgk"),
+                    Text("kjhgkhgk"),
+                    Text("kjhgkhgk"),
+                    Text("kjhgkhgk"),
+                    Text("kjhgkhgk"),
+                    Text("kjhgkhgk"),
+                  ],
+                ),
+              )
+            ],
           ),
           floatingActionButton: FloatingActionButton(
               child: Icon(
@@ -45,7 +84,7 @@ class _ShopVState extends State<ShopV> {
               BottomNavigationBarItem(
                   icon: Icon(Icons.favorite), title: Text('Like')),
               BottomNavigationBarItem(
-                  icon: Icon(Icons.home), title: Text('Start')),
+                  icon: Icon(Icons.home), title: Text('Srt')),
               BottomNavigationBarItem(
                   icon: Icon(Icons.navigation), title: Text('Nav')),
               BottomNavigationBarItem(

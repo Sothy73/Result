@@ -19,11 +19,31 @@ class _ShopVState extends State<ShopV> {
               HomeScreenTopPage(),
               Expanded(
                 child: ListView(
+                  padding: EdgeInsets.only(left: 15),
                   children: [
-                    Text("kjhgkhgk"),
-                    Text("kjhgkhgk"),
-                    Text("kjhgkhgk"),
-                    Text("kjhgkhgk"),
+                    SizedBox(),
+                    Text(
+                      "Categories",
+                      style: TextStyle(
+                          color: Colors.grey,
+                          fontSize: 25,
+                          fontWeight: FontWeight.bold),
+                    ),
+                    SizedBox(
+                      height: 5,
+                    ),
+                    Container(
+                      height: 150,
+                      child: ListView.builder(
+                        itemCount: 4,
+                        padding: EdgeInsets.only(left: 16),
+                        shrinkWrap: true,
+                        physics: BouncingScrollPhysics(),
+                        itemBuilder: (context, index) {
+                          return;
+                        },
+                      ),
+                    ),
                     Text("kjhgkhgk"),
                     Text("kjhgkhgk"),
                     Text("kjhgkhgk"),

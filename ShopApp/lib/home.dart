@@ -1,4 +1,6 @@
 import 'package:ShopApp/HomePage.dart';
+import 'package:ShopApp/cuisineItems.dart';
+import 'package:ShopApp/cuisine_items_card.dart';
 import 'package:flutter/material.dart';
 
 class ShopV extends StatefulWidget {
@@ -8,6 +10,13 @@ class ShopV extends StatefulWidget {
 
 class _ShopVState extends State<ShopV> {
   int _currentIndex = 0;
+  List<CuisineItems> cuisinItems = [
+    CuisineItems(text: 'Homes', secondaryText: null, image: 'image/Home_1.jpg'),
+    CuisineItems(
+        text: 'Restaurants', secondaryText: null, image: 'image/Food_1.jpg'),
+    CuisineItems(text: 'Pizza', secondaryText: null, image: 'image/Food_2.jpg'),
+    CuisineItems(text: 'Houre', secondaryText: null, image: 'image/Home_2.jpg'),
+  ];
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -40,7 +49,9 @@ class _ShopVState extends State<ShopV> {
                         shrinkWrap: true,
                         physics: BouncingScrollPhysics(),
                         itemBuilder: (context, index) {
-                          return;
+                          return CuisineItemsCard(
+                            cuisineItems: cuisinItems[index],
+                          );
                         },
                       ),
                     ),
